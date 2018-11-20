@@ -7,6 +7,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(post_params)
+    flash[:success] = 'Post created'
     redirect_to posts_url
   end
 
