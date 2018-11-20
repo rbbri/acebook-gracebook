@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
+require 'web_helper'
 
 RSpec.describe PostsController, type: :controller do
   describe 'GET /new ' do
@@ -17,6 +18,7 @@ RSpec.describe PostsController, type: :controller do
     end
 
     it 'creates a post' do
+      add_user
       post :create, params: { post: { message: 'Hello, world!' } }
       expect(Post.find_by(message: 'Hello, world!')).to be
     end
