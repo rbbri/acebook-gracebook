@@ -3992,6 +3992,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  font-family: 'Pacifico', cursive;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
