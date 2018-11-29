@@ -3,13 +3,14 @@
 }
 
 .comment {
-  padding-left: 5%;
-  margin-left: 5%;
+  padding: 2% 5%;
+  margin-left: 12%;
+  margin-right: 12%;
   border-style: solid;
   background-clip: border-box;
   border: 1px solid rgba(220, 181, 181, 0.125);
   border-radius: 0.25rem;
-  background-color: #58585312;
+  background-color: #c4dfe68c;
 }
 
 .btn-primary-custom {
@@ -47,7 +48,7 @@
 }
 
 a {
-  color: #66A5AD;
+  color: #003B46;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -64,4 +65,14 @@ a:hover {
   line-height: 1.2;
   text-align: center;
   color: #07575B;
+
+.posts {
+  padding: 2%;
+  margin-top: 2%;
+  background-color: #C4DFE6;
+}
+
+.card {
+  margin-left: 12%;
+  margin-right: 12%;
 }
