@@ -13,7 +13,7 @@ Rails.application.routes.draw do
       get 'albums/new'
       get 'albums/create'
       get 'albums/edit'
-      get 'albums/update'
+      post 'albums/update'
       get 'albums/destroy'
     end
     resources :posts do
