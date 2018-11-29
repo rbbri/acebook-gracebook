@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'albums/index'
+  get 'albums/show'
+  get 'albums/new'
+  get 'albums/create'
+  get 'albums/edit'
+  get 'albums/update'
+  get 'albums/destroy'
     root 'users#new'
     get 'sessions/new'
     get  '/signup',  to: 'users#new'
