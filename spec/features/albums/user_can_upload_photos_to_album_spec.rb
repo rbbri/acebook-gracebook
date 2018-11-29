@@ -9,7 +9,14 @@ RSpec.feature 'Album', type: :feature do
   end
 
   scenario "user can upload a photo" do
-    click_link 'Album'
+    visit('/')
+    click_link 'Log in'
+    fill_in 'Email', with: 'John@example.com'
+    fill_in 'Password', with: 'sosecure'
+    click_button 'Log in'
+    within(".album_link") do
+      click_link 'Album'
+    end
     click_button 'Add new photo'
     attach_file("Upload Your File", Rails.root + "spec/fixtures/file.png")
     click_button 'Submit'
