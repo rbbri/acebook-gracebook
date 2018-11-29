@@ -6,6 +6,7 @@ class AlbumsController < ApplicationController
   end
 
   def show
+    @album = Album.find()
   end
 
   def create
@@ -15,6 +16,7 @@ class AlbumsController < ApplicationController
   end
 
   def update
+    redirect_to "/users/#{params[:user_id]}/albums/show"
   end
 
   def destroy

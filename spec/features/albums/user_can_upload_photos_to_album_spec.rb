@@ -18,9 +18,10 @@ RSpec.feature 'Album', type: :feature do
       click_link 'Album'
     end
     click_button 'Add new photo'
-    attach_file("Upload Your File", Rails.root + "spec/fixtures/file.png")
+    attach_file("album_image", Rails.root + "spec/features/albums/image.png")
     click_button 'Submit'
-    expect(page).to have_content("spec/fixtures/file.png")
+    # expect(page).to have_content("spec/features/albums/image.png")
+    expect(page.find('.album')['src']).to have_content 'image.png'
   end
 
 end
