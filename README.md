@@ -23,7 +23,7 @@ First, clone this repository. Then:
 
 ## Using the app
 
-The app is hosted on Heroku, it can be found at `https://grace-book.herokuapp.com/`
+The app is hosted on Heroku, it can be found at https://grace-book.herokuapp.com/
 
 A user can:
 - Sign up to AceBook
