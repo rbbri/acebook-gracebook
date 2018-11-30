@@ -5,5 +5,11 @@
   <%= @album.title %>
 </p>
 
+<div class="album_images">
+  <% @album.images.each do |image| %>
+    <%= image_tag(image) %>
+  <% end %>
+</div>
+
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
